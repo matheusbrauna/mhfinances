@@ -7,10 +7,13 @@ export const Container = styled.div`
   margin-top: -10rem;
 
   div {
-    background-color: var(--shape);
+    background-color: var(--shape-01);
     padding: 1.5rem 2rem;
     border-radius: 0.25rem;
     color: var(--text-title);
+
+    position: relative;
+    transition: transform 0.2s;
 
     header {
       display: flex;
@@ -27,8 +30,12 @@ export const Container = styled.div`
     }
 
     &.highlight-background {
-      background-color: var(--green);
+      background-color: var(--shape-02);
       color: #fff;
+    }
+
+    &:hover {
+      transform: translateY(-8px);
     }
   }
 

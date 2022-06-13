@@ -14,15 +14,17 @@ export const Container = styled.form`
     height: 4rem;
     border-radius: 0.5rem;
 
-    border: 1px solid #d7d7d7;
-    background-color: #e7e9ee;
+    border: 1px solid var(--shape-01);
+    background-color: var(--shape-01);
 
     font-weight: 400;
     font-size: 1rem;
 
     &::placeholder {
-      color: var(--text-body);
+      color: var(--text-title);
     }
+
+    color: #fff;
 
     & + input {
       margin-top: 1rem;
@@ -44,7 +46,7 @@ export const Container = styled.form`
     transition: filter 0.2s;
 
     &:hover {
-      filter: brightness(0.9);
+      filter: brightness(1.1);
     }
   }
 `

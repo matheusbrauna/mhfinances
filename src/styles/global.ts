@@ -2,17 +2,19 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   :root{
-    --background: #f0f2f5;
-    --shape: #fff;
+    --body-background:#1F1F1F;
+    --header-background:  #1D1B1F;
+    --shape-01: #49454f;
+    --shape-02: #5420B6;
     
     --red: #e52e4d;
-    --blue: #5429cc;
-    --green: #33cc95;
+    --green:#5420B6;
 
-    --blue-light: #6933ff;
+    --blue-light: #5420B6;
 
-    --text-title: #363f5f;
-    --text-body: #969cb3;
+    --text-title: #CCC2DC;
+    --text-body:#CAC4CF;
+
   }
   
   * {
@@ -36,7 +38,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: var(--background);
+    background-color: var(--body-background);
     -webkit-font-smoothing: antialiased;
   }
 
@@ -73,7 +75,7 @@ export const GlobalStyle = createGlobalStyle`
   .react-modal-content{
     width: 100%;
     max-width: 576px;
-    background: var(--background);
+    background: var(--body-background);
     padding: 3rem;
     position: relative;
     border-radius: 0.25rem;
@@ -93,4 +95,12 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
+  .logo{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+
+    font-size: 1.5rem;
+  }
 `

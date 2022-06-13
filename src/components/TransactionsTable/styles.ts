@@ -19,20 +19,24 @@ export const Container = styled.div`
     td {
       padding: 1rem 2rem;
       border: 0;
-      background-color: var(--shape);
+      background-color: var(--shape-01);
       color: var(--text-body);
-      border-radius: 0.25rem;
 
       &:first-child {
-        color: var(--text-title);
+        color: #fff;
+        border-radius: 4px 0px 0px 4px;
+      }
+
+      &:last-child {
+        border-radius: 0px 4px 4px 0px;
       }
 
       &.deposit {
-        color: var(--green);
+        color: #33cc95;
       }
 
       &.withdraw {
-        color: var(--red);
+        color: #e52e4d;
       }
     }
   }

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.header`
-  background: var(--blue);
+  background: var(--header-background);
 `
 
 export const Content = styled.div`
@@ -16,7 +16,7 @@ export const Content = styled.div`
   button {
     font-size: 1rem;
     color: #fff;
-    background-color: var(--blue-light);
+    background-color: var(--shape-02);
     border: 0;
     padding: 0 2rem;
     border-radius: 0.25rem;
@@ -25,7 +25,7 @@ export const Content = styled.div`
     transition: filter 0.2s;
 
     &:hover {
-      filter: brightness(0.9);
+      filter: brightness(1.1);
     }
   }
   @media (max-width: 768px) {
