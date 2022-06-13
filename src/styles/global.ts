@@ -100,6 +100,8 @@ export const GlobalStyle = createGlobalStyle`
     align-items: center;
     gap: 10px;
     color: white;
+    
+    cursor: pointer;
 
     font-size: 1.5rem;
   }
