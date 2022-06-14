@@ -1,8 +1,9 @@
+import { Trash } from 'phosphor-react'
 import { useTransactions } from '../../hooks/useTransactions'
 import { Container } from './styles'
 
 export function TransactionsTable() {
-  const { transactions } = useTransactions()
+  const { transactions, handleDeleteTask } = useTransactions()
 
   return (
     <Container>
@@ -13,6 +14,7 @@ export function TransactionsTable() {
             <th>Valor</th>
             <th>Categoria</th>
             <th>Data</th>
+            <th></th>
           </tr>
         </thead>
 
@@ -32,6 +34,14 @@ export function TransactionsTable() {
                   new Date(transaction.createdAt)
                 )}
               </td>
+              <Trash
+                size={32}
+                className="delete-task"
+                color="#e52e4d"
+                onClick={() => {
+                  handleDeleteTask(transaction.id)
+                }}
+              />
             </tr>
           ))}
         </tbody>

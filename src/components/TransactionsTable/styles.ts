@@ -37,6 +37,32 @@ export const Container = styled.div`
 
       &.withdraw {
         color: #e52e4d;
+
+        &::before {
+          content: '- ';
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        position: relative;
+
+        .delete-task {
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          right: 4rem;
+          top: 50%;
+          transform: translateY(-50%);
+          cursor: pointer;
+
+          transition: opacity 0.2s;
+        }
+        &:hover .delete-task {
+          visibility: visible;
+          opacity: 1;
+        }
       }
     }
   }
