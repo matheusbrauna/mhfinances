@@ -52,7 +52,7 @@ export const Container = styled.div`
           visibility: hidden;
           opacity: 0;
           position: absolute;
-          right: 4rem;
+          right: 1.5rem;
           top: 50%;
           transform: translateY(-50%);
           cursor: pointer;

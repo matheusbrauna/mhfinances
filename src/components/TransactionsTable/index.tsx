@@ -34,14 +34,16 @@ export function TransactionsTable() {
                   new Date(transaction.createdAt)
                 )}
               </td>
-              <Trash
-                size={32}
-                className="delete-task"
-                color="#e52e4d"
-                onClick={() => {
-                  handleDeleteTask(transaction.id)
-                }}
-              />
+              <td>
+                <Trash
+                  size={32}
+                  className="delete-task"
+                  color="#e52e4d"
+                  onClick={() => {
+                    handleDeleteTask(transaction.id)
+                  }}
+                />
+              </td>
             </tr>
           ))}
         </tbody>
