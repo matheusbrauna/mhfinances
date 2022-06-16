@@ -31,7 +31,6 @@
 
 <h1 align="center">
   <img src="./github/image1.png" alt="Imagem de demonstração do projeto">
- </video>
 </h1>
 
 ## Pré requisitos
