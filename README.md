@@ -3,7 +3,7 @@
 </div>
 
 <p align="center">
-  Aplicação de gestão financeira que consume uma fake API.
+  Aplicação de gestão financeira que faz o uso de uma fake API.
 </p>
 
 <p align="center">
